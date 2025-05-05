@@ -1,0 +1,30 @@
+programa {
+  inteiro nota=0    
+  inteiro maior=0
+
+  funcao inicio() {
+
+    desenhatela()
+
+    para(inteiro i = 0; i<5; i++){
+      escreva("\nInforme sua nota: ")
+      leia(nota)
+      se(nota>maior){
+        maior = nota
+        
+      }
+      desenhatela()
+      
+    }
+    escreva("\nA maior nota de todas foi ", maior)
+
+    
+  }
+  funcao desenhatela(){
+    limpa()
+    escreva("---------------------------------")
+    escreva("\nVERIFICADOR DE MAIOR NOTA\n")
+    escreva("A maior nota até agora é: ", maior)
+    escreva("\n---------------------------------")
+  }
+}
